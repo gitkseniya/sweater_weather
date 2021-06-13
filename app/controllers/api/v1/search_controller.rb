@@ -1,9 +1,10 @@
-class SearchController < ApplicationController
+class Api::V1::SearchController < ApplicationController
 
   def show
-    lat = LocationFacade.get_lat(city)
-    lon = LocationFacade.get_lon(city)
-    
-    @weather = WeatherFacade.get_details(lat, lon)
+    coordinates = LocationFacade.get_lat_lon(params[:location])
+
+    weather = WeatherFacade.get_details(coordinates.lat, coordinates.lon)
+
+    render json: ForecastSerializer.new(weather)
   end
 end

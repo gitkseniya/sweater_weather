@@ -1,11 +1,8 @@
 class LocationFacade
 
-  def self.get_lat(city)
-    LocationService.get_lat_lon(city)
-  end
-
-  def self.get_lon(city)
-    LocationService.get_lat_lon(city)
+  def self.get_lat_lon(location)
+    location_data = LocationService.get_lat_lon(location)
+    Location.new(location_data)
   end
 
 end
