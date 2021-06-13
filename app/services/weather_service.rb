@@ -4,6 +4,7 @@ class WeatherService < BaseService
     response = conn('https://api.openweathermap.org').get('/data/2.5/onecall') do |f|
       f.params['lat'] = lat
       f.params['lon'] = lon
+      f.params['exclude'] = 'minutely,alerts'
       f.params['appid'] = ENV['openweather_key']
     end
     format_json(response)
