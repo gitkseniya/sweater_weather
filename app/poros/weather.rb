@@ -1,7 +1,6 @@
 class Weather
 
   attr_reader :id,
-              :type,
               :datetime,
               :sunrise,
               :sunset,
@@ -15,8 +14,6 @@ class Weather
 
   def initialize(weather_data)
     @id = nil
-    @type = "forecast"
-
     current = weather_data[:current]
 
     @datetime = Time.at(current[:dt])

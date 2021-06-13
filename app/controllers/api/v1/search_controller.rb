@@ -5,6 +5,6 @@ class Api::V1::SearchController < ApplicationController
 
     @weather = WeatherFacade.get_details(coordinates.lat, coordinates.lon)
 
-    # render json: WeatherSerializer.new(@weather)
+    render json: ForecastSerializer.new(@weather)
   end
 end
