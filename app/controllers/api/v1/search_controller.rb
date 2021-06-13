@@ -5,7 +5,6 @@ class Api::V1::SearchController < ApplicationController
 
     weather = WeatherFacade.get_details(coordinates.lat, coordinates.lon)
 
-    json_resp = ForecastSerializer.new(weather)
-    render json: json_resp, include: '**'
+    render json: ForecastSerializer.new(weather)
   end
 end
