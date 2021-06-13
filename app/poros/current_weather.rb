@@ -9,19 +9,18 @@ class CurrentWeather
               :conditions,
               :icon
 
-  def initialize(weather_data)
-    current_weather = weather_data[:current]
-    @sunrise = current_weather[:sunrise]
-    @datetime = Time.at(current_weather[:dt])
-    @sunrise = Time.at(current_weather[:sunrise])
-    @sunset = Time.at(current_weather[:sunset])
-    @temperature = to_farenheit(current_weather[:temp])
-    @feels_like = to_farenheit(current_weather[:feels_like])
-    @humidity = current_weather[:humidity]
-    @uvi = current_weather[:uvi]
-    @visibility = current_weather[:visibility]
-    @conditions = current_weather[:weather].first[:description]
-    @icon = current_weather[:weather].first[:icon]
+  def initialize(data)
+    @sunrise = data[:sunrise]
+    @datetime = Time.at(data[:dt])
+    @sunrise = Time.at(data[:sunrise])
+    @sunset = Time.at(data[:sunset])
+    @temperature = to_farenheit(data[:temp])
+    @feels_like = to_farenheit(data[:feels_like])
+    @humidity = data[:humidity]
+    @uvi = data[:uvi]
+    @visibility = data[:visibility]
+    @conditions = data[:weather].first[:description]
+    @icon = data[:weather].first[:icon]
   end
 
   def to_farenheit(temp)
