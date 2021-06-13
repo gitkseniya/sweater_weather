@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
 
-  def index
+  def show
     @location = LocationFacade.get_lat_long(city)
     # @weather = WeatherFacade.get_details(@location)
   end
