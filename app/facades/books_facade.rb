@@ -1,8 +1,8 @@
 class BooksFacade
 
-  def self.get_books(destination, quantity, conditions, temperature)
+  def self.get_books(destination, quantity, weather)
     book_data = BooksService.get_books(destination)
 
-    Books.new(book_data, destination, quantity, conditions, temperature)
+    Books.new(book_data, destination, quantity, weather)
   end
 end

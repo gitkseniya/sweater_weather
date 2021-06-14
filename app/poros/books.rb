@@ -5,11 +5,11 @@ class Books
               :total_books_found,
               :books
 
-  def initialize(book_data, destination, quantity, conditions, temperature)
+  def initialize(book_data, destination, quantity, weather)
     @id = nil
     @destination = destination
     @total_books_found = book_data[:num_found]
-    @forecast = "{ summary: #{conditions}, temperature: #{temperature} }"
+    @forecast = BookForecast.new(weather)
     @books = book_data[:docs].map do |d|
       Book.new(d)
     end

@@ -2,13 +2,13 @@ class Api::V1::BooksController < ApplicationController
   def index
     coordinates = LocationFacade.get_lat_lon(params[:location])
     weather = WeatherFacade.get_details(coordinates.lat, coordinates.lon)
-    current_weather = weather.current_weather
+    # current_weather = weather.current_weather
 
     destination = params[:location]
-    conditions = weather.current_weather.conditions
-    temperature = weather.current_weather.temperature
+    # conditions = weather.current_weather.conditions
+    # temperature = weather.current_weather.temperature
 
-    books = BooksFacade.get_books(destination, params[:quantity], conditions, temperature)
+    books = BooksFacade.get_books(destination, params[:quantity], weather)
 
     render json: BooksSerializer.new(books)
   end
