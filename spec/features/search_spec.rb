@@ -43,7 +43,24 @@ RSpec.describe 'forecast API', type: :request do
     end
 
     it 'should return daily weather and its attributes' do
+      VCR.use_cassette('forecast API/happy_path/should return result and correct attributes') do
 
+      get api_v1_forecast_path, params: { location: 'Phoenix, AZ' }
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      daily_weather = json[:data][:attributes][:daily_weather]
+
+      expect(response).to be_successful
+
+      expect(daily_weather[0][:date]).to be_a(String)
+        expect(daily_weather[0][:sunrise]).to be_a(String)
+        expect(daily_weather[0][:sunset]).to be_a(String)
+        expect(daily_weather[0][:max_temp]).to be_a(Float)
+        expect(daily_weather[0][:min_temp]).to be_a(Float)
+        expect(daily_weather[0][:conditions]).to be_a(String)
+        expect(daily_weather[0][:icon]).to be_a(String)
+      end
     end
 
     it 'should return hourly weather and its attributes' do
