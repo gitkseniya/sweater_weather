@@ -4,8 +4,8 @@ RSpec.describe 'books API', type: :request do
   describe 'happy path' do
     it 'should return result and correct attributes', :vcr do
       get api_v1_book_search_path, params: { location: 'Denver, CO',
-      quantity: 3
-    }
+        quantity: 3
+      }
 
       json = JSON.parse(response.body, symbolize_names: true)
 
@@ -20,4 +20,19 @@ RSpec.describe 'books API', type: :request do
       expect(books[:attributes].keys).to eq([:destination, :forecast, :total_books_found, :books])
     end
   end
+
+  describe 'sad path' do
+    it 'should return error', :vcr do
+
+      get api_v1_book_search_path, params: { location: 'Denver, CO',
+        quantity: 0
+      }
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to have_http_status(400)
+      expect(json[:error]).to eq('invalid parameters')
+    end
+  end
+
 end
