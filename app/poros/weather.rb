@@ -1,5 +1,6 @@
 class Weather
   attr_reader :id,
+              :destination,
               :current_weather,
               :daily_weather,
               :hourly_weather
