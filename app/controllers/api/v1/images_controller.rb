@@ -1,7 +1,11 @@
 class Api::V1::ImagesController < ApplicationController
   def index
-    images = ImagesFacade.get_images(params[:location])
+    if params[:location]
+      images = ImagesFacade.get_images(params[:location])
 
-    render json: ImageSerializer.new(images)
+      render json: ImageSerializer.new(images)
+    else
+      invalid_params
+    end
   end
 end

@@ -5,5 +5,4 @@ class ImagesFacade
 
     Image.new(data)
   end
-
 end

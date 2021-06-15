@@ -4,6 +4,6 @@ class Image
 
   def initialize(data)
     @id = nil
-    @image = data[:image]
-  end 
+    @image = data[:photos][:photo][0]
+  end
 end
