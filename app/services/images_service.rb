@@ -10,8 +10,6 @@ class ImagesService < BaseService
       f.params['nojsoncallback'] = 1
     end
     format_json(response)
-    # return '22377206314' if format_json(response)[:photos][:total] == '0' || location == ''
-    # format_json(response)[:photos][:photo][0][:id]
   end
 
   def self.get_info(location)
@@ -20,7 +18,7 @@ class ImagesService < BaseService
       f.params['format'] = 'json'
       f.params['nojsoncallback'] = 1
       f.params['method'] = 'flickr.photos.getInfo'
-      f.params['photo_id'] = get_images(location)
+      f.params['photo_id'] = get_images(location)[:photos][:photo][0][:id]
     end
     format_json(response)[:photo]
   end
