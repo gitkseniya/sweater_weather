@@ -4,6 +4,8 @@ class Api::V1::UsersController < ApplicationController
 
       if @user.password != @user.password_confirmation || @user.password.empty?
         render json: { error: "Unsuccessful request" }, status: 400
+      elsif User.find_by(email: @user[:email]).present?
+        render json: { error: "User is already registered" }, status: 400
       else
         @user.save
         @user.update(api_key: SecureRandom.hex)
