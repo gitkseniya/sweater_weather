@@ -1,6 +1,6 @@
 class Api::V1::ImagesController < ApplicationController
   def index
-    if params[:location]
+    if params[:location].present?
       images = ImagesFacade.get_images(params[:location])
 
       render json: ImageSerializer.new(images)
