@@ -79,4 +79,15 @@ RSpec.describe 'forecast API', type: :request do
       end
     end
   end
+
+  describe 'sad path' do
+    it 'should return error if invalid params', :vcr do
+
+      get api_v1_forecast_path, params: { location: '' }
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json[:error]).to eq('Invalid params')
+    end
+  end
 end

@@ -7,6 +7,10 @@ class RoadTripFacade
 
     weather = WeatherFacade.get_details(location_data.lat, location_data.lon)
 
-    RoadTrip.new(trip, weather, origin, destination)
+    if trip != 'unable to proceed'
+        RoadTrip.new(trip, weather, origin, destination)
+    else
+      GhostCity.new(trip, weather, origin, destination)
+    end
   end
 end

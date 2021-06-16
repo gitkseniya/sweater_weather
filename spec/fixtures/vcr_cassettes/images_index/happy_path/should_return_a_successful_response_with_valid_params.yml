@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest?api_key=bf23a61c971d7f53d8d1cbd98b37b03e&format=json&method=flickr.photos.search&nojsoncallback=1&per_page=1&text=Denver,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '286'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 16 Jun 2021 05:03:23 GMT
+      Server:
+      - Apache/2.4.46 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 16-Jul-2021 05:03:22 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cddde15c11afac53ac9fe7978dcfecd7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - Zw0Fj-deTG6bJ73m2FsiF_ex1f3smV-ymp5CCgtzay6eUeX1RH75Ow==
+    body:
+      encoding: UTF-8
+      string: '{"photos":{"page":1,"pages":14614,"perpage":1,"total":14614,"photo":[{"id":"51183176746","owner":"56683178@N06","secret":"dac154f475","server":"65535","farm":66,"title":"BN
+        7042 #195 Crossing Clear Creek Denver, CO  April 28, 1990","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+  recorded_at: Wed, 16 Jun 2021 05:03:22 GMT
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest?api_key=bf23a61c971d7f53d8d1cbd98b37b03e&format=json&method=flickr.photos.search&nojsoncallback=1&per_page=1&text=Denver,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '286'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 16 Jun 2021 05:03:24 GMT
+      Server:
+      - Apache/2.4.46 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 16-Jul-2021 05:03:23 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1653617c8dfc2e48beca446a9a4426a1.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ORD52-C2
+      X-Amz-Cf-Id:
+      - DwcUzbMAdR7fiLBIq64pTcBQ2pEbkqdEJpLVI0JUqCw4oKBmO3n5ag==
+    body:
+      encoding: UTF-8
+      string: '{"photos":{"page":1,"pages":14614,"perpage":1,"total":14614,"photo":[{"id":"51183176746","owner":"56683178@N06","secret":"dac154f475","server":"65535","farm":66,"title":"BN
+        7042 #195 Crossing Clear Creek Denver, CO  April 28, 1990","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+  recorded_at: Wed, 16 Jun 2021 05:03:23 GMT
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest?api_key=bf23a61c971d7f53d8d1cbd98b37b03e&format=json&method=flickr.photos.getInfo&nojsoncallback=1&photo_id=51183176746
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 16 Jun 2021 05:03:25 GMT
+      Server:
+      - Apache/2.4.46 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 16-Jul-2021 05:03:24 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 98e2eb12ca62ecc662bc928ec41abedd.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ORD52-C2
+      X-Amz-Cf-Id:
+      - xWlrKdT90KeZ3KUkZZodw8i9aZzMCbEFak0IeVwFpZGPXhLIKNglnw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"51183176746","secret":"dac154f475","server":"65535","farm":66,"dateuploaded":"1621190926","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"05d3328119","originalformat":"jpg","owner":{"nsid":"56683178@N06","username":"blupenny99","realname":"tom
+        byrnas","location":"Brighton, CO, USA","iconserver":"65535","iconfarm":66,"path_alias":"20tcb10"},"title":{"_content":"BN
+        7042 #195 Crossing Clear Creek Denver, CO  April 28, 1990"},"description":{"_content":"BN''s
+        #195 train begins its trip north along the Front Range.  "},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1621190926","taken":"1990-04-28
+        11:39:40","takengranularity":"0","takenunknown":"0","lastupdate":"1622136980"},"views":"241","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"2"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"56637856-51183176746-10304","author":"56683178@N06","authorname":"blupenny99","raw":"BN","_content":"bn","machine_tag":0},{"id":"56637856-51183176746-350586","author":"56683178@N06","authorname":"blupenny99","raw":"Burlington
+        Northern","_content":"burlingtonnorthern","machine_tag":0},{"id":"56637856-51183176746-8854","author":"56683178@N06","authorname":"blupenny99","raw":"Trains","_content":"trains","machine_tag":0},{"id":"56637856-51183176746-92338","author":"56683178@N06","authorname":"blupenny99","raw":"Railroads","_content":"railroads","machine_tag":0},{"id":"56637856-51183176746-85148","author":"56683178@N06","authorname":"blupenny99","raw":"Denver,
+        CO","_content":"denverco","machine_tag":0},{"id":"56637856-51183176746-3157","author":"56683178@N06","authorname":"blupenny99","raw":"Colorado","_content":"colorado","machine_tag":0},{"id":"56637856-51183176746-127","author":"56683178@N06","authorname":"blupenny99","raw":"Bridge","_content":"bridge","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/20tcb10\/51183176746\/"}]},"media":"photo"},"stat":"ok"}'
+  recorded_at: Wed, 16 Jun 2021 05:03:24 GMT
+recorded_with: VCR 6.0.0

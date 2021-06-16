@@ -1,0 +1,215 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest?api_key=bf23a61c971d7f53d8d1cbd98b37b03e&format=json&method=flickr.photos.search&nojsoncallback=1&per_page=1&text=xxxxxxxxxx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '252'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 16 Jun 2021 05:09:15 GMT
+      Server:
+      - Apache/2.4.46 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 16-Jul-2021 05:09:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c4fb40b7909e4dd897bba2e297b284e7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - hTWMpwxHhWFrybOnJeeSEf5rQ2XZ8H8XiZyu_fLI0GnQh5m4ufXApQ==
+    body:
+      encoding: UTF-8
+      string: '{"photos":{"page":1,"pages":2625,"perpage":1,"total":2625,"photo":[{"id":"51222561064","owner":"115685976@N06","secret":"5515d3a115","server":"65535","farm":66,"title":"I
+        keep falling into nothing","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+  recorded_at: Wed, 16 Jun 2021 05:09:14 GMT
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest?api_key=bf23a61c971d7f53d8d1cbd98b37b03e&format=json&method=flickr.photos.search&nojsoncallback=1&per_page=1&text=xxxxxxxxxx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '252'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 16 Jun 2021 05:09:15 GMT
+      Server:
+      - Apache/2.4.46 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 16-Jul-2021 05:09:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1e5c934b70471a41d2b61ae8c4abeb79.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - AcmPYCX01di35cCIEjxSkUjQprqeEOnYUF8uJCqU5hpLpqicrkyRQw==
+    body:
+      encoding: UTF-8
+      string: '{"photos":{"page":1,"pages":2625,"perpage":1,"total":2625,"photo":[{"id":"51222561064","owner":"115685976@N06","secret":"5515d3a115","server":"65535","farm":66,"title":"I
+        keep falling into nothing","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+  recorded_at: Wed, 16 Jun 2021 05:09:15 GMT
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest?api_key=bf23a61c971d7f53d8d1cbd98b37b03e&format=json&method=flickr.photos.getInfo&nojsoncallback=1&photo_id=51222561064
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 16 Jun 2021 05:09:16 GMT
+      Server:
+      - Apache/2.4.46 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 16-Jul-2021 05:09:15 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7d885ba806a1846198f8b666005bec93.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - _5uzXX4rQd1nCMmDQLvlX2tg1LwhQuJzlVpMsAkSfoxPxXI-vn97vw==
+    body:
+      encoding: UTF-8
+      string: '{"photo":{"id":"51222561064","secret":"5515d3a115","server":"65535","farm":66,"dateuploaded":"1622718797","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"837832d232","originalformat":"jpg","owner":{"nsid":"115685976@N06","username":"KeiLani
+        Velaystar","realname":"","location":null,"iconserver":"65535","iconfarm":66,"path_alias":"keilanivelaystar"},"title":{"_content":"I
+        keep falling into nothing"},"description":{"_content":"<a href=\"https:\/\/www.youtube.com\/watch?v=ETt9j2YxF4g\"
+        rel=\"noreferrer nofollow\">Mood<\/a>\n<a href=\"https:\/\/keiseclecticcloset.blogspot.com\/2021\/06\/i-keep-falling-into-nothing.html\"
+        rel=\"noreferrer nofollow\">Blog<\/a>\n\n__________________________________________________\n\n\nHair:
+        <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Secrets\/163\/154\/23\"
+        rel=\"noreferrer nofollow\">DOUX<\/a> - Ara hairstyle @ <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Horizon
+        Beach\/120\/59\/2000\" rel=\"noreferrer nofollow\">Dubai<\/a>\n\nSkin: <a
+        href=\"http:\/\/maps.secondlife.com\/secondlife\/Beauty Avatar couture\/163\/134\/24\"
+        rel=\"noreferrer nofollow\">[Glam Affair]<\/a> Bibi Skin [Lelutka EvoX] @
+        <a href=\"http:\/\/maps.secondlife.com\/secondlife\/The Arcade\/67\/132\/32\"
+        rel=\"noreferrer nofollow\">The Arcade<\/a> \u2661\n\nBrows: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Beauty
+        Avatar couture\/163\/134\/24\" rel=\"noreferrer nofollow\">[Glam Affair]<\/a>
+        Lovely Brows - 02 @ <a href=\"http:\/\/maps.secondlife.com\/secondlife\/The
+        Arcade\/67\/132\/32\" rel=\"noreferrer nofollow\">The Arcade<\/a> \u2661\n\nLiner:
+        <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Gilmore\/78\/193\/1024\"
+        rel=\"noreferrer nofollow\">WarPaint*<\/a> Lavish liner @ <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Anthem\/126\/127\/1107\"
+        rel=\"noreferrer nofollow\">Anthem<\/a> \u2661\n\nHead: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/LeLutka\/121\/137\/24\"
+        rel=\"noreferrer nofollow\">LeLUTKA<\/a> Avalon Head 3.0 \n\nBody: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/The
+        Shops\/97\/32\/26\" rel=\"noreferrer nofollow\">[LEGACY]<\/a> Meshbody (f)
+        Special Edition (1.4)\n\nBikini: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/BUTTERSCOTCH\/125\/128\/24\"
+        rel=\"noreferrer nofollow\">TORI TORRICELLI<\/a> \/\/ Lily Bikini Set @ <a
+        href=\"http:\/\/maps.secondlife.com\/secondlife\/FaMESHed\/217\/230\/800\"
+        rel=\"noreferrer nofollow\">FaMESHed<\/a>\n\nRobe: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/BUTTERSCOTCH\/125\/128\/24\"
+        rel=\"noreferrer nofollow\">TORI TORRICELLI<\/a> \/\/ Lily Kimono @ <a href=\"http:\/\/maps.secondlife.com\/secondlife\/FaMESHed\/217\/230\/800\"
+        rel=\"noreferrer nofollow\">FaMESHed<\/a>\n\nChains: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/BUTTERSCOTCH\/125\/128\/24\"
+        rel=\"noreferrer nofollow\">TORI TORRICELLI<\/a> \/\/ Lily Body Chains @ <a
+        href=\"http:\/\/maps.secondlife.com\/secondlife\/FaMESHed\/217\/230\/800\"
+        rel=\"noreferrer nofollow\">FaMESHed<\/a>\n\nChoker: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Cynful\/87\/127\/24\"
+        rel=\"noreferrer nofollow\">Cynful<\/a> Mina Piercing - Choker\n\nBelly Piercing:
+        <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Cynful\/87\/127\/24\"
+        rel=\"noreferrer nofollow\">Cynful<\/a> Mina Piercing - Belly\n\nEarrings:
+        <a href=\"http:\/\/maps.secondlife.com\/secondlife\/RAWR\/58\/195\/3501\"
+        rel=\"noreferrer nofollow\">RAWR!<\/a> Moonchild Human Ears EvoX\n\nRings:
+        <a href=\"http:\/\/maps.secondlife.com\/secondlife\/RAWR\/58\/195\/3501\"
+        rel=\"noreferrer nofollow\">RAWR!<\/a> Minimal Rings\n\nFace Tattoos: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/AmCoz\/208\/143\/2102\"
+        rel=\"noreferrer nofollow\">ALBA<\/a> - Kefi Tattoos Bundle - Face  @ <a href=\"http:\/\/maps.secondlife.com\/secondlife\/Intimacy\/102\/64\/2514\"
+        rel=\"noreferrer nofollow\">Harajuku<\/a> \u2661\n\nTattoos: <a href=\"http:\/\/maps.secondlife.com\/secondlife\/AmCoz\/208\/143\/2102\"
+        rel=\"noreferrer nofollow\">ALBA<\/a> - Splendor Tattoos Bundle"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1622718797","taken":"2021-06-03
+        00:00:00","takengranularity":"0","takenunknown":"0","lastupdate":"1623732209"},"views":"1806","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"7"},"notes":{"note":[]},"people":{"haspeople":1},"tags":{"tag":[{"id":"115640654-51222561064-650652","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"DOUX","_content":"doux","machine_tag":0},{"id":"115640654-51222561064-51353765","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Glam Affair","_content":"glamaffair","machine_tag":0},{"id":"115640654-51222561064-110313","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"WarPaint","_content":"warpaint","machine_tag":0},{"id":"115640654-51222561064-33473050","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"LeLUTKA","_content":"lelutka","machine_tag":0},{"id":"115640654-51222561064-44431","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"LEGACY","_content":"legacy","machine_tag":0},{"id":"115640654-51222561064-72555621","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"TORI TORRICELLI","_content":"toritorricelli","machine_tag":0},{"id":"115640654-51222561064-12198140","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Cynful","_content":"cynful","machine_tag":0},{"id":"115640654-51222561064-14380","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"RAWR","_content":"rawr","machine_tag":0},{"id":"115640654-51222561064-4727","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"ALBA","_content":"alba","machine_tag":0},{"id":"115640654-51222561064-3334","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Dubai","_content":"dubai","machine_tag":0},{"id":"115640654-51222561064-756447","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"The Arcade","_content":"thearcade","machine_tag":0},{"id":"115640654-51222561064-80286","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Anthem","_content":"anthem","machine_tag":0},{"id":"115640654-51222561064-85600664","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"FaMESHed","_content":"fameshed","machine_tag":0},{"id":"115640654-51222561064-2247568","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"xxxxxxxxxx","_content":"xxxxxxxxxx","machine_tag":0},{"id":"115640654-51222561064-6041","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Events","_content":"events","machine_tag":0},{"id":"115640654-51222561064-95","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"New","_content":"new","machine_tag":0},{"id":"115640654-51222561064-280126","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"New Release","_content":"newrelease","machine_tag":0},{"id":"115640654-51222561064-4940","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Sale","_content":"sale","machine_tag":0},{"id":"115640654-51222561064-4387","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Mesh","_content":"mesh","machine_tag":0},{"id":"115640654-51222561064-11449","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"SL","_content":"sl","machine_tag":0},{"id":"115640654-51222561064-13766","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Second Life","_content":"secondlife","machine_tag":0},{"id":"115640654-51222561064-950","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Fashion","_content":"fashion","machine_tag":0},{"id":"115640654-51222561064-1382302","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Women''s Fashion","_content":"womensfashion","machine_tag":0},{"id":"115640654-51222561064-2290809","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Fashion Blog","_content":"fashionblog","machine_tag":0},{"id":"115640654-51222561064-7809675","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"SL Fashion","_content":"slfashion","machine_tag":0},{"id":"115640654-51222561064-4196","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Adult","_content":"adult","machine_tag":0},{"id":"115640654-51222561064-245","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Summer","_content":"summer","machine_tag":0},{"id":"115640654-51222561064-704","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Beach","_content":"beach","machine_tag":0},{"id":"115640654-51222561064-19","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Ocean","_content":"ocean","machine_tag":0},{"id":"115640654-51222561064-9559287","author":"115685976@N06","authorname":"KeiLani
+        Velaystar","raw":"Second Life Fashion","_content":"secondlifefashion","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/keilanivelaystar\/51222561064\/"}]},"media":"photo"},"stat":"ok"}'
+  recorded_at: Wed, 16 Jun 2021 05:09:15 GMT
+recorded_with: VCR 6.0.0

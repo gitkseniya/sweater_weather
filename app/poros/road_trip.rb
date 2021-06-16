@@ -15,17 +15,19 @@ class RoadTrip
   end
 
   def calculate(weather)
+    min = @travel_time_minutes/60
+    
     if @travel_time_minutes < 60
       weather.current_weather
-    elsif @travel_time_minutes/60 <= 24
+    elsif min < 24
       weather.daily_weather[0]
-    elsif 24 <= @travel_time_minutes/60 < 48
+    elsif 24 <= min && min < 48
       weather.daily_weather[1]
-    elsif 48 <= @travel_time_minutes/60 < 72
+    elsif 48 <= min && min < 72
       weather.daily_weather[2]
-    elsif 72 <= @travel_time_minutes/60 < 96
+    elsif 72 <= min && min < 96
       weather.daily_weather[3]
-    elsif 96 <= @travel_time_minutes/60 < 120
+    elsif 96 <= min && min < 120
       weather.daily_weather[4]
     else
       "Weather data is not available"
