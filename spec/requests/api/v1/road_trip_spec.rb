@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Api::V1::RoadTrips Create', type: :request do
+RSpec.describe 'roadtrip create', type: :request do
   before :each do
     @user = User.create(
       email: 'whatever@example.com',
