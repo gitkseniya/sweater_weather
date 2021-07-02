@@ -43,7 +43,7 @@ This is a back-end repo that exposes APIs in order to be consumed by the front-e
   `"email": "whatever@example.com",`     
   `"password": "password",`      
   `"password_confirmation": "password"`     
-}`
+`}`  
 
 
 #### 3. Login       
@@ -69,8 +69,17 @@ body:
   `"origin": "Denver,CO",`    
   `"destination": "Pueblo,CO",`  
   `"api_key": "jgn983hy48thw9begh98h4539h4"`   
-}`
+`}`
 
+
+## Deployment
+
+Heroku link: https://sweater-weather-kk.herokuapp.com/api/v1/
+
+add variables:
+* forecast?location=Denver,CO
+* backgrounds?location=Boulder,CO
+* road_trip POST request with origin, destination, and api_key (refer to Endpoints section)
 
 ## Figaro Setup 
 Add Figaro to your Gemfile and `bundle install`:
